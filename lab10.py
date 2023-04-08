@@ -17,10 +17,5 @@ y = int((screen_height/2) - (height/2))
 root.geometry(str(width) + "x" + str(height) + "+" + str(x) + "+" + str(y))
 root.title("lab10")
 button = Button(root, height = 1, width = 7, text = "Старт", command = lambda: click_button(button))
-button.pack()
-def click_button(button):
-    button1 = Button(root, height = 1, width = 7, text = "15 секунд")
-    button2 = Button(root, height = 1, width = 7, text = "30 секунд")
-    button["text"] = "45 секунд"
 root.resizable(False, False)
 root.mainloop()
